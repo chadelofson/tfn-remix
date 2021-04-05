@@ -1,0 +1,8 @@
+/public/build
+sam.json
+sam.yaml
+package-lock.json
+.npmrc
+node_modules
+/src/http/any-catchall/.cache
+/src/http/any-catchall/build

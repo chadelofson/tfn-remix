@@ -1,0 +1,40 @@
+{
+  "name": "remix-starter-architect",
+  "private": true,
+  "version": "1.0.0",
+  "sideEffects": false,
+  "scripts": {
+    "css:watch": "postcss styles/**/*.css --base styles --dir app/styles --w",
+    "css:build": "postcss styles/**/*.css --base styles --dir app/styles --env production",
+    "dev": "pm2-dev pm2.config.js",
+    "postinstall": "npm run build",
+    "build": "remix build2",
+    "start": "remix run2"
+  },
+  "dependencies": {
+    "@architect/functions": "^3.13.3",
+    "@remix-run/architect": "^0.15.2",
+    "@remix-run/node": "^0.15.2",
+    "@remix-run/react": "^0.15.2",
+    "@tailwindcss/forms": "0.3.2",
+    "aws-sdk": "2.796.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^6.0.0-beta.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^0.15.2",
+    "@tailwindcss/jit": "0.1.18",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "autoprefixer": "10.2.5",
+    "pm2": "4.5.6",
+    "postcss": "8.2.9",
+    "postcss-cli": "8.3.1",
+    "tailwindcss": "2.0.4",
+    "typescript": "^4.1.2"
+  },
+  "engines": {
+    "node": "14"
+  }
+}

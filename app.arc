@@ -1,12 +1,13 @@
 @app
-remix-starter-architect
+tfn
 
 @http
 any /*
 
 @static
 
-# @aws
-# profile default
-# region us-west-1
+@aws
+profile admin
+#region us-west-1
+region ca-central-1 
   
